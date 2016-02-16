@@ -1,0 +1,17 @@
+/*
+public class StringArray1 {
+	
+public static void main(String[] args) {
+	char[] arr=new char[]{'B','H','B','H','F','C','A','G','H','G','H','C'};
+	char temp='\u0000';
+	for(int i=0;i<arr.length;i++){
+		for(int j=1;j<i+1;j++){
+			if(arr[i]!=arr[j]){
+				temp=arr[j];
+			}
+		}
+	}
+	System.out.println(temp);
+}
+}
+*/

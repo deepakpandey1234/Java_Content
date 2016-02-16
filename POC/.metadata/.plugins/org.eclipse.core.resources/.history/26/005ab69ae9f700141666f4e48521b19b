@@ -1,0 +1,65 @@
+var module=angular.module("MyApp",['ngRoute']);
+
+module.config(['$routeProvider',
+               function($routeProvider) {
+                 $routeProvider.
+                 when('/test', {
+                   templateUrl: 'test.html',
+                   controller: 'testController'
+           	   })
+           	.when('/contact', {
+                templateUrl: 'contact.html',
+                controller: 'contactController'
+            });
+}
+]);
+
+
+
+
+module.controller("homeController",  function($scope,$http) {
+	var response = $http.get("http://localhost:8080/AngularA/pages/welcome");
+	response.success(function(data) {
+			$scope.person=data;
+			alert($scope.person.number);
+			//alert($scope.person.empName);
+		//alert($scope.person.firstName);
+	});
+	response.error(function(data, status, headers, config) {
+		
+	});	
+});
+
+module.service("Firstservice",function(){
+	var formdata={
+			firstname:$scope.firstname,
+			lastname:$scope.lastname,
+			email:$scope.email,
+			telephone:$scope.telephone				
+	};	
+	return formdata;
+});
+module.controller("testController",  function($scope) {
+	debugger;
+	$scope.msg='DeepakYOYO';
+	$scope.submit=function(){
+		
+		
+	};
+});
+
+
+module.controller('contactController',  function($http,$scope,$location) {
+	
+	
+	var response = $http.get("http://localhost:8080/AngularA/pages/addContact");
+	response.success(function(data) {
+		$scope.contact=data;
+		alert($scope.contact.firstname);
+	
+});
+
+	
+});
+
+

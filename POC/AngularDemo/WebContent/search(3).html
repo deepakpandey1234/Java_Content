@@ -1,0 +1,28 @@
+<form role="form" >
+<div style="text-align:center">
+			Search for <input type="text"   ng-model="search.searchtext" required> in
+			<select ng-model="category" ng-change="change()"  ng-options="opt.cateValue for opt in options track by opt.cateValue">
+										<option value="" ng-selected>--Select--</option>
+										</select>
+			
+			<div class="search-button" style="display: inline;">
+			<strong><input type="button" value="Search" ng-click="onSearch(search);"></strong></div>
+</div>
+<div id="search_options" >
+			 <hr>
+		<div>
+		<label>Price</label>
+				<select id="qs_price_low"  ng-model="search.minprice">
+				<option value="" ng-selected>--Select--</option>
+				<option value="100">100</option>
+				<option value="1000">1000</option>
+				<option value="10000">10000</option>
+					</select>
+		<select id="qs_price_high"  ng-model="search.maxprice">
+		<option value="" ng-selected>--Select--</option>
+		<option value="1000">1000</option>
+				<option value="10000">10000</option>
+				<option value="100000">100000</option>
+			</select>
+						</div>	</div>
+						</form>

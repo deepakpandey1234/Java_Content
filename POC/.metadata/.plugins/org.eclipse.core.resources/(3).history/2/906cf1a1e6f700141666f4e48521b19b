@@ -1,0 +1,49 @@
+var module=angular.module("MyApp",['ngRoute']);
+
+module.config(['$routeProvider',
+               function($routeProvider) {
+                 $routeProvider.
+                 when('/test', {
+                   templateUrl: 'test.html',
+                   controller: 'testController'
+                	   })
+                	   .when('/contact', {
+                           templateUrl: 'contact.html',
+                           controller: 'contactController'
+                        	   });}
+
+]);
+
+
+module.controller("homeController",  function($scope,$http) {
+	
+	
+	$scope.submit=function(){
+		var formdata={
+				firstname:$scope.firstname,
+				secondname:$scope.secondname,
+				email:$scope.email,
+				telephone:$scope.telephone				
+		}
+		alert(formdata);
+	}
+});
+
+module.controller("testController",  function($scope) {
+	$scope.msg='DeepakYOYO';
+});
+
+
+module.controller('contactController',  function($scope,$location) {
+	
+	var response = $http.get("http://localhost:8080/AngularA/pages/addContact");
+	response.success(function(data) {
+		$scope.contact=data;
+		alert($scope.contact.firstname);
+	
+});
+
+	
+});
+
+

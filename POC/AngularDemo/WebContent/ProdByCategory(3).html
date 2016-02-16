@@ -1,0 +1,9 @@
+<div id="allcontents" class="allcontents" ng-repeat="prod in prods">
+<div style="float: left;    margin: 5px;        width: 225px;    height: 180px; text-align:center;   border: 1px solid black;">{{prod.name}}<br />
+<a ng-href="#prodDetails" ng-click="setParams(prod)"><img alt="No Image Available" width='140' height='100' src=DisplayPhoto?id={{prod.id}}></a></img>
+<span style="align:left">Price: {{prod.price}}</span>
+</div>
+</div>
+<div style="color:red" ng-show="prods.length<1">
+No Results found
+</div>

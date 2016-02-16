@@ -1,0 +1,66 @@
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Random;
+
+class SharedQueue{
+    public static Queue<Integer> queue  = new LinkedList<Integer>();
+ }
+
+class Producer implements Runnable{
+public void run()
+{
+	synchronized (SharedQueue.queue)
+           {
+            if(SharedQueue.queue.size() >=5)
+            {
+                try {
+                    SharedQueue.queue.wait();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            Random r  = new Random();
+
+            int x = 4;//r.nextInt(10);
+            System.out.println("Inside Producer" + x);
+
+            SharedQueue.queue.offer(x);
+            SharedQueue.queue.notify();
+
+        }
+}
+}
+
+class Consumer implements  Runnable{
+public void run()
+{
+    synchronized (SharedQueue.queue)
+    {
+        if(SharedQueue.queue.size() == 0)
+        {
+            try {
+                SharedQueue.queue.wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            }
+        }
+
+        int k = SharedQueue.queue.remove();
+
+        System.out.println("Inside consumer" + k);
+    }
+}
+}
+public class ProducerConsumerTest {
+
+public static void main(String[] args)
+{
+
+    Thread p = new Thread(new Producer());
+    Thread q = new Thread(new Consumer());
+   
+    p.start();
+    q.start();
+
+}
+ }

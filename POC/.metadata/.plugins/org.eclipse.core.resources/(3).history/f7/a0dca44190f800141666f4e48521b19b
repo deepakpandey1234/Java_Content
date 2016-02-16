@@ -1,0 +1,9 @@
+
+<div>
+  Enter text and hit enter:
+  Firstname:<input type="text" ng-model="firstname" name="firstname"/>
+   Lastname:<input type="text" ng-model="lastname" name="lastname"/>
+    Email:<input type="text" ng-model="email" name="email"/>
+     Telephone:<input type="text" ng-model="telephone" name="telephone"/>
+  <button type="button" class="btn btn-info" ng-click="submit()">submit</button>
+</div>

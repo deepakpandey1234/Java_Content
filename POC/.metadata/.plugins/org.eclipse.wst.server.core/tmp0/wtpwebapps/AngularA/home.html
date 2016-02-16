@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Home</title>
+<script src="angular.min.js"></script>
+<script src="script.js"></script>
+<script src="angular-route.js"></script>
+<script src="ui-bootstrap-tpls-0.13.0.min.js"></script>
+</head>
+<body>
+<div ng-app="MyApp" ng-controller="homeController">
+<table border="1">
+      <thead>
+        <tr>
+          <th> Name</th>
+        
+        </tr>
+      </thead>
+      
+   
+
+<tbody>
+        <tr ng-repeat="name in person.empName">
+          <td>{{name}}</td>
+          
+        </tr>
+      </tbody>
+ </table>
+{{person.number}}</br>
+<a href="#/test">Test</a>
+<a href="#/contact">Test</a>
+
+<div ng-view="">
+</div>
+ 	
+</div>
+
+</body>
+</html>

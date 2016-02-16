@@ -1,0 +1,17 @@
+INDEX VERSION 1.126
+D:\Java\POC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4255942922.index
+\AngularA\src
+D:\Java\POC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\345341253.index
+\SpringMvcDemo\src
+D:\Java\POC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1426362482.index
+\SpringMVC\src\main\java
+D:\Java\POC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1605261086.index
+\Springi18n\src
+D:\Java\POC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\176104258.index
+\AngularA\src
+D:\Java\POC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4102920349.index
+\Springi18n\src
+D:\Java\POC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2333396220.index
+\AngularA\src
+D:\Java\POC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3610730947.index
+\SpringMvcDemo\src

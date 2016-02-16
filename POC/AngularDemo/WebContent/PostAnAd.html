@@ -1,0 +1,26 @@
+<form role="form" ng-submit="onPostAnAd(postanad);" enctype="multipart/form-data">
+<div style="background-color:#FFE0E0;text-align: center;margin-top:10px;padding-top:10px;padding-bottom:10px;">
+    <table style="margin-left: 35%;">
+    <thead><td style="width:100px;"><td style="width:100px;"></thead>
+    
+    <tr><td><label>Product Name</label></td>
+    <td><input type="text" ng-model="postanad.name" /></td></tr>
+    <tr><td><label>Category </label></td>
+    <td><select ng-options="opt.cateValue for opt in options track by opt.cateId" ng-model="postanad.category" onchange="(this.selected)";/></select></td></tr>
+    <tr><td><label>Brand Name </label></td>
+    <td><input type="text" ng-model="postanad.brandname" /></td></tr>
+    <tr><td><label>Price </label></td>
+    <td><input type="number" ng-model="postanad.price" /></td></tr>
+    <tr><td><label>Description </label></td>
+    <td><input type="text" ng-model="postanad.description" /></td></tr>
+    <tr><td><label>Featured </label></td>
+    <td><input type="checkbox" ng-model="postanad.featured" /></td></tr>
+    <tr><td><label>Highlighted </label></td>
+    <td><input type="checkbox" ng-model="postanad.highlight" /></td></tr>
+    <tr><td><label>Photo </label></td>
+    <td><input type="file"  
+    onchange="angular.element(this).scope().uploadFile(this.files)"/></td></tr>
+    <tr><td><input type="submit" /></td><td></td></tr>
+    </table>
+    </div>
+</form>

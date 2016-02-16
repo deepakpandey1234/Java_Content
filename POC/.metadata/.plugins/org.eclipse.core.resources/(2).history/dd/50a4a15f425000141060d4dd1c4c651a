@@ -1,0 +1,8 @@
+//find the 1st non-repeated letter from array of Strings.
+// BH BH FC AG HG HC – ans F
+public class StringArray1 {
+	
+public static void main(String[] args) {
+	String[] str=new String[]{"BH","BH","FC","AG","HG","HC"};
+}
+}

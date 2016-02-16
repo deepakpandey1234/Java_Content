@@ -1,0 +1,35 @@
+<div id="centersection" style="">
+<div id="allcontents" class="allcontents">
+<div style="float: left;    margin: 0px 5px 5px 0px;        width: 225px;    height: 200px;    border: 1px solid black;">
+Vehicle<br /><a href="#prodByCategory/Vehicle"><br /><img width='180' height='150' src="img/vehicle.jpg"></a></a>
+</div>
+<div style="float: left;    margin: 0px 5px 5px 0px;        width: 225px;    height: 200px;    border: 1px solid black;">
+Mobile<br /><a href="#prodByCategory/Mobile"><img width='180' height='150' src="img/Mobile.jpg"></a>
+</div>
+<div style="float: left;    margin: 0px 5px 5px 0px;        width: 225px;    height: 200px;    border: 1px solid black;">
+Flowers<br /><a href="#prodByCategory/Flower"><img  width='180' height='150' src="img/flower.jpg"></a>
+</div>
+<div style="float: left;    margin: 0px 5px 5px 0px;        width: 225px;    height: 200px;    border: 1px solid black;">
+Computer Accessories <br /><a href="#prodByCategory/Computer"><img width='180' height='150' src="img/Computer.jpg"></a>
+</div>
+<div style="float: left;    margin: 0px 5px 5px 0px;        width: 225px;    height: 200px;    border: 1px solid black;">
+Books<br /><a href="#prodByCategory/Books"><img width='180' height='150' src="img/Books.jpg"></a>
+</div>
+<div style="float: left;    margin: 0px 5px 5px 0px;        width: 225px;    height: 200px;    border: 1px solid black;">
+Hotels<br /><a href="#prodByCategory/Hotels"><img width='180' height='150' src="img/Hotels.jpg"></a>
+</div>
+<div style="float: left;    margin: 0px 5px 5px 0px;        width: 225px;    height: 200px;    border: 1px solid black;">
+Bags<br /><a href="#prodByCategory/Bags"><img width='180' height='150' src="img/Bags.jpg"></a>
+</div>
+<div style="float: left;    margin: 0px 5px 5px 0px;        width: 225px;    height: 200px;    border: 1px solid black;">
+Pet Bottles <br /><a href="#prodByCategory/Bottles"><img width='180' height='150' src="img/bottels.jpg"></a>
+</div>
+</div>
+</div>
+<div id="ads"style="position:relative;width:28%;margin-top:10px;float:right;text-align:center;background-color:#FFF;">
+<div ng-repeat="prod in prods" >
+<div style="float: left;    margin: 5px;        width: 290px;    height: 180px; text-align:center;   border: 1px solid black;">{{prod.category}}<br />
+<a href="#prodByCategory/{{prod.category}}"><img alt="No Image Available" width='250' height='100' src=DisplayPhoto?id={{prod.id}}></a>
+</div>
+</div>
+</div>

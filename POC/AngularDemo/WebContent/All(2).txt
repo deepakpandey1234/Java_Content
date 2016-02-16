@@ -1,0 +1,264 @@
+
+<div id="search">
+			Search for&nbsp;<input type="text" name="qs_keyword" size="35">&nbsp;in&nbsp;
+			<select id="qs_category" name="qs_category" onchange="onQuickSearch(this.form, 'http://www.iibgee.com'); reloadDep('2', 'http://www.iibgee.com');">
+				<option value="">All Categories</option>
+								<option value="1" class="opt_parent">Vehicles</option>
+								<option value="8">&nbsp;&nbsp;&nbsp;Cars</option>
+								<option value="9">&nbsp;&nbsp;&nbsp;Motorcycles</option>
+								<option value="10">&nbsp;&nbsp;&nbsp;Boats</option>
+								<option value="11">&nbsp;&nbsp;&nbsp;Buses</option>
+								<option value="12">&nbsp;&nbsp;&nbsp;Commercial Trucks</option>
+								<option value="14">&nbsp;&nbsp;&nbsp;Parts &amp; Accessories</option>
+								<option value="15">&nbsp;&nbsp;&nbsp;Everything Else</option>
+								<option value="2" class="opt_parent">Real Estate</option>
+								<option value="16">&nbsp;&nbsp;&nbsp;Homes For Sale</option>
+								<option value="17">&nbsp;&nbsp;&nbsp;Homes for Rent</option>
+								<option value="19">&nbsp;&nbsp;&nbsp;Office &amp; Commercial</option>
+								<option value="21">&nbsp;&nbsp;&nbsp;Housing Wanted</option>
+								<option value="23">&nbsp;&nbsp;&nbsp;Land</option>
+								<option value="24">&nbsp;&nbsp;&nbsp;Agents &amp; Services</option>
+								<option value="103">Hotels</option>
+								<option value="104" class="opt_parent">Banks &amp; Money transfer</option>
+								<option value="110">&nbsp;&nbsp;&nbsp;Banks</option>
+								<option value="111">&nbsp;&nbsp;&nbsp;Moneytransfer</option>
+								<option value="105" class="opt_parent">Education</option>
+								<option value="112">&nbsp;&nbsp;&nbsp;Schools</option>
+								<option value="113">&nbsp;&nbsp;&nbsp;Colleges</option>
+								<option value="114">&nbsp;&nbsp;&nbsp;Universities</option>
+								<option value="6" class="opt_parent">Fashion &amp; Accessories</option>
+								<option value="67">&nbsp;&nbsp;&nbsp;Clothing &amp; Accessories</option>
+								<option value="65">&nbsp;&nbsp;&nbsp;Books &amp; Magazines</option>
+								<option value="66">&nbsp;&nbsp;&nbsp;Cell Phones</option>
+								<option value="68">&nbsp;&nbsp;&nbsp;Computers</option>
+								<option value="70">&nbsp;&nbsp;&nbsp;Electronics</option>
+								<option value="72">&nbsp;&nbsp;&nbsp;Furniture</option>
+								<option value="73">&nbsp;&nbsp;&nbsp;Health &amp; Beauty</option>
+								<option value="74">&nbsp;&nbsp;&nbsp;Home &amp; Garden</option>
+								<option value="77">&nbsp;&nbsp;&nbsp;Sports Equipment</option>
+								<option value="71">&nbsp;&nbsp;&nbsp;Everything Else</option>
+								<option value="107">Airlines</option>
+								<option value="7" class="opt_parent">Services</option>
+								<option value="78">&nbsp;&nbsp;&nbsp;Auto Services</option>
+								<option value="79">&nbsp;&nbsp;&nbsp;Child &amp; Elder Care</option>
+								<option value="80">&nbsp;&nbsp;&nbsp;Cleaning Services</option>
+								<option value="81">&nbsp;&nbsp;&nbsp;Computer Services</option>
+								<option value="86">&nbsp;&nbsp;&nbsp;Health &amp; Beauty</option>
+								<option value="83">&nbsp;&nbsp;&nbsp;Everything Else</option>
+								<option value="87">&nbsp;&nbsp;&nbsp;Household</option>
+								<option value="88">&nbsp;&nbsp;&nbsp;Landscaping</option>
+								<option value="89">&nbsp;&nbsp;&nbsp;Lessons</option>
+								<option value="90">&nbsp;&nbsp;&nbsp;Moving/Removals</option>
+								<option value="91">&nbsp;&nbsp;&nbsp;Translation</option>
+								<option value="4" class="opt_parent">Jobs</option>
+								<option value="35">&nbsp;&nbsp;&nbsp;Accounting &amp; Finance</option>
+								<option value="36">&nbsp;&nbsp;&nbsp;Advertising</option>
+								<option value="37">&nbsp;&nbsp;&nbsp;Art &amp; Design &amp; Media</option>
+								<option value="38">&nbsp;&nbsp;&nbsp;Business &amp; Management</option>
+								<option value="39">&nbsp;&nbsp;&nbsp;Cleaning</option>
+								<option value="40">&nbsp;&nbsp;&nbsp;Construction</option>
+								<option value="41">&nbsp;&nbsp;&nbsp;Customer Service</option>
+								<option value="42">&nbsp;&nbsp;&nbsp;Education</option>
+								<option value="44">&nbsp;&nbsp;&nbsp;Fashion</option>
+								<option value="45">&nbsp;&nbsp;&nbsp;Healthcare</option>
+								<option value="46">&nbsp;&nbsp;&nbsp;Internet Engineering</option>
+								<option value="47">&nbsp;&nbsp;&nbsp;Legal</option>
+								<option value="48">&nbsp;&nbsp;&nbsp;Manual Labor</option>
+								<option value="49">&nbsp;&nbsp;&nbsp;Marketing</option>
+								<option value="50">&nbsp;&nbsp;&nbsp;Real Estate</option>
+								<option value="51">&nbsp;&nbsp;&nbsp;Retail</option>
+								<option value="52">&nbsp;&nbsp;&nbsp;Sales</option>
+								<option value="53">&nbsp;&nbsp;&nbsp;Technology</option>
+								<option value="54">&nbsp;&nbsp;&nbsp;Telecommunications</option>
+								<option value="55">&nbsp;&nbsp;&nbsp;Transportation &amp; Travel</option>
+								<option value="56">&nbsp;&nbsp;&nbsp;Work at Home</option>
+								<option value="115">&nbsp;&nbsp;&nbsp;UN &amp; NGO's</option>
+								<option value="43">&nbsp;&nbsp;&nbsp;Everything Else</option>
+								<option value="106" class="opt_parent">Food Stores &amp; Restaurants</option>
+								<option value="108">&nbsp;&nbsp;&nbsp;Food stores</option>
+								<option value="109">&nbsp;&nbsp;&nbsp;Restaurants</option>
+								<option value="97" class="opt_parent">Business</option>
+								<option value="98">&nbsp;&nbsp;&nbsp;Business for Sale</option>
+								<option value="99">&nbsp;&nbsp;&nbsp;Business Partners Solicitied</option>
+								<option value="101">&nbsp;&nbsp;&nbsp;Business Opportunities</option>
+								<option value="92" class="opt_parent">General</option>
+								<option value="96">&nbsp;&nbsp;&nbsp;Ecommerce Websites</option>
+								<option value="93">&nbsp;&nbsp;&nbsp;Press Release</option>
+								<option value="94">&nbsp;&nbsp;&nbsp;Article Submission</option>
+								<option value="95">&nbsp;&nbsp;&nbsp;Company Information</option>
+							</select>
+			<input type="hidden" name="order" value="date_added">
+			<input type="hidden" name="order_way" value="desc">
+
+			<div class="search-button" style="display: inline;"><strong><input type="submit" name="Search" value="Search"></strong></div>
+
+						<br>
+<div id="search_options">
+			 <hr>
+			 <ul class="searchlist">
+
+	
+	
+			<li>
+		<div>
+		<label>Price</label>
+				<select id="qs_price_low" name="qs_price_low">
+			<option value="">- Min -</option>
+						<option value="500">500</option>
+						<option value="1500">1500</option>
+						<option value="2000">2000</option>
+						<option value="2500">2500</option>
+						<option value="3000">3000</option>
+						<option value="3500">3500</option>
+						<option value="4000">4000</option>
+						<option value="4500">4500</option>
+						<option value="5000">5000</option>
+						<option value="6000">6000</option>
+						<option value="7000">7000</option>
+						<option value="8000">8000</option>
+						<option value="9000">9000</option>
+						<option value="10000">10000</option>
+						<option value="12500">12500</option>
+						<option value="15000">15000</option>
+						<option value="17500">17500</option>
+						<option value="20000">20000</option>
+						<option value="25000">25000</option>
+						<option value="30000">30000</option>
+						<option value="40000">40000</option>
+						<option value="50000">50000</option>
+						<option value="75000">75000</option>
+						<option value="100000">100000</option>
+					</select>
+		</div>
+		</li>
+		<li>
+		<div>
+		<label></label>
+		<select id="qs_price_high" name="qs_price_high">
+			<option value="">- Max -</option>
+						<option value="500">500</option>
+						<option value="1500">1500</option>
+						<option value="2000">2000</option>
+						<option value="2500">2500</option>
+						<option value="3000">3000</option>
+						<option value="3500">3500</option>
+						<option value="4000">4000</option>
+						<option value="4500">4500</option>
+						<option value="5000">5000</option>
+						<option value="6000">6000</option>
+						<option value="7000">7000</option>
+						<option value="8000">8000</option>
+						<option value="9000">9000</option>
+						<option value="10000">10000</option>
+						<option value="12500">12500</option>
+						<option value="15000">15000</option>
+						<option value="17500">17500</option>
+						<option value="20000">20000</option>
+						<option value="25000">25000</option>
+						<option value="30000">30000</option>
+						<option value="40000">40000</option>
+						<option value="50000">50000</option>
+						<option value="75000">75000</option>
+						<option value="100000">100000</option>
+					</select>
+		
+		
+						</div>
+		</li>
+
+	
+	
+	
+		<li>
+	<div>
+	<br><label>Country</label>
+	<select name="qs_country" id="qs_country" onchange="selDepending(1, 'qs_country', 'qs_region', '1', 0, 0, '', 'http://www.iibgee.com' )">
+		<option value="">Select Country</option>
+			</select>
+	</div>
+	</li>
+	<li>
+	<div>
+	<label>Region</label>
+	<span><select disabled="disabled" name="qs_region" id="qs_region">
+		<option value="">Select Region</option>
+	</select></span>
+	</div>
+
+
+	</li>
+
+	
+	
+		<li id="li_make" style="display: none">
+	<div>
+	<label>Make</label><br>
+	<select name="qs_make" id="qs_make" disabled="disabled" onchange="selDepending(1, 'qs_make', 'qs_model', '2', this.form.qs_category.value, 0, '', 'http://www.iibgee.com' )">
+		<option value="">Select Make</option>
+			</select>
+	</div>
+	</li>
+	<li id="li_model" style="display: none">
+	<div>
+	<label>Model</label><br>
+	<span><select disabled="disabled" name="qs_model" id="qs_model">
+		<option value="">Select Model</option>
+	</select></span>
+	</div>
+
+
+	</li>
+
+	
+	
+
+
+			 </ul>
+	</div>
+</div>
+
+
+
+
+<div id="content" ng-view="">
+<div id="scroller">
+<div class="jMyCarousel">
+    <ul>
+        <li><img src="carousel_img/2/1.jpg" width="200" height="100%"></li>
+        <li><img src="carousel_img/2/2.jpg" width="200" height="100%"></li>
+ 		<li><img src="carousel_img/2/3.jpg" width="200" height="100%"></li>
+        <li><img src="carousel_img/2/4.jpg" width="200" height="100%"></li>
+        <li><img src="carousel_img/2/5.jpg" width="200" height="100%"></li>
+        <li><img src="carousel_img/2/6.jpg" width="200" height="100%"></li>
+  </ul>
+</div>
+</div>
+<div id="centersection">
+<div id="allcontents">
+Your title and comments
+</div>
+</div>
+<div id="ads">
+Ads
+</div>
+</div>
+ <br/>
+<div id="share" class="footersec" style="clear:both;bottom:70"  >
+share
+</div>
+<div id="tags" class="footersec" style="bottom : 40;">
+tags
+</div>
+<div id="footer" class="footersec" style="bottom : 10;">
+footer
+</div>
+<script type="text/javascript">
+$( function () {
+
+	if($( window ).height() != $(document).height() )     
+        $( '#share' ).css( 'margin-top', ($(document).height()-50) );
+	else	
+   $('#share' ).css( 'margin-top', '420' );
+
+});
+</script>
